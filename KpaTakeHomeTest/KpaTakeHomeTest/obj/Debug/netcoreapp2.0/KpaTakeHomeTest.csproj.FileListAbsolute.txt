@@ -1,0 +1,11 @@
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\bin\Debug\netcoreapp2.0\KpaTakeHomeTest.deps.json
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\bin\Debug\netcoreapp2.0\KpaTakeHomeTest.runtimeconfig.json
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\bin\Debug\netcoreapp2.0\KpaTakeHomeTest.runtimeconfig.dev.json
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\bin\Debug\netcoreapp2.0\KpaTakeHomeTest.dll
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\bin\Debug\netcoreapp2.0\KpaTakeHomeTest.pdb
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\obj\Debug\netcoreapp2.0\KpaTakeHomeTest.csprojResolveAssemblyReference.cache
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\obj\Debug\netcoreapp2.0\KpaTakeHomeTest.csproj.CoreCompileInputs.cache
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\obj\Debug\netcoreapp2.0\KpaTakeHomeTest.AssemblyInfoInputs.cache
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\obj\Debug\netcoreapp2.0\KpaTakeHomeTest.AssemblyInfo.cs
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\obj\Debug\netcoreapp2.0\KpaTakeHomeTest.dll
+c:\users\b scribble\source\repos\KpaTakeHomeTest\KpaTakeHomeTest\obj\Debug\netcoreapp2.0\KpaTakeHomeTest.pdb

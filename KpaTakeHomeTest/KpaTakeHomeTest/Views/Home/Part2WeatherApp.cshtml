@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Part2WeatherApp";
+}
+
+<h2>Part 2 - Weather App</h2>
+<script src="~/js/skycons.js"></script>
+<div class="well">
+    <h4>Enter the longitude and latitude below to get current weather conditions:</h4>
+    @Html.TextBox("Longitude", null, new { @class = "form-control", placeholder = "Enter logitude here" })<br />
+    @Html.TextBox("Latitude", null, new { @class = "form-control", placeholder = "Enter latitude here" })<br>
+    <input type="submit" value="Get Weather!" id="BtnGetWeather" />
+
+</div>
+
+<div class="well" id="results">
+</div>
+
+
+<script>
+    $("#BtnGetWeather").click(function (event) {
+        event.preventDefault();
+
+        var Longitude = $("#Longitude").val();
+        var Latitude = $("#Latitude").val();
+
+        $.ajax({
+            url: "/WeatherProxy/GetWeather",
+            method: "GET",
+            data: {
+                Longitude: Longitude,
+                Latitude: Latitude
+            },
+            contentType: "application/json;",
+            success: function (data) {
+                var returnedData = JSON.parse(data);
+                var htmlToSet = "<Strong>Time Zone:</strong> " + returnedData.timezone + "<br/>";
+                htmlToSet += "<canvas id='icon1' width='64' height='64'></canvas><br>";
+                htmlToSet += "<Strong>Current Temperature:</strong> " + returnedData.currently.temperature + "&deg;F<br/>";
+                htmlToSet += "<Strong>Current Wind Speed:</strong> " + returnedData.currently.windSpeed + "mph<br/>";
+
+
+                $("#results").html(htmlToSet);
+
+                //draw icon using supplied js
+                var skycons = new Skycons({ "color": "pink" });
+                skycons.add(document.getElementById("icon1"), returnedData.currently.icon);
+                skycons.play();
+            },
+            error: function (request, status, error) {
+                alert(error);
+            }
+        });
+    });
+</script>

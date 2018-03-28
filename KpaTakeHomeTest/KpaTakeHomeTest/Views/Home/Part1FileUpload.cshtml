@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Part1FileUpload";
+}
+
+<h2>Part 1 - File Upload</h2>
+
+@using (Html.BeginForm("FileUploaded", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+<div class="well">
+    @Html.Label("file", "Click below to choose a .csv file to upload") 
+    @Html.TextBox("file", "", new { type = "file" })
+    <br />
+    <input type="submit" value="Upload" />
+    @ViewBag.StatusMessage
+</div>
+}  
